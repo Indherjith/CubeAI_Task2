@@ -23,7 +23,7 @@ const check_Fullname = (fname)=>{
         }
     })
     if(status == false){
-        alert("Numbers and Special Characters are not Acceptable!");
+        alert("Numbers and Special Characters are not Acceptable for FullName!");
         document.getElementById("fname").value = null;
     }
 }
@@ -40,7 +40,7 @@ const check_Username = (uname)=>{
         })
     })
     if(status == false){
-        alert("Special Characters except @ are not Acceptable!");
+        alert("Special Characters except @ are not Acceptable for UserName!");
         document.getElementById("uname").value = null;
     }
 }
@@ -64,12 +64,12 @@ const check_password = (pass)=>{
             }
         })
         if(num<=0 || special<=0){
-            alert("Password should contain atleast one number and one special charecter!");
+            alert("Password should contain atleast one number and one special charecter for Password!");
             document.getElementById("pass").value = null;
         }
     }
     else{
-        alert("Password length should be minimum  eight characters!")
+        alert("Password length should be minimum  eight characters for Password!")
     }
 }
 
