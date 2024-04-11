@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="regForm">
+        <h1>Registration Form</h1>
+        <form id="reg_form" >
+                <div class="fullname">
+                    <p class="one">FullName</p>
+                    <input class="one" required type="text" id="fname" onchange="check_Fullname(event.target.value)" name="fullname" placeholder="Enter Full Name">
+                </div>
+                <div class="username">
+                    <p>UserName</p>
+                    <input type="text" required name="username" id="uname" onchange="check_Username(event.target.value)" placeholder="Enter User Name">
+                </div>
+                <div class="password">
+                    <p>Password</p>
+                    <input type="password" required name="password" id="pass" onchange="check_password(event.target.value)" placeholder="Enter Password">
+                </div>
+                <div class="password">
+                    <p>Confirm Password</p>
+                    <input type="password" required name="confirm_password" id="conpass" onchange="check_confirmpassword(event.target.value)" placeholder="Re-Enter Password">
+                </div>
+                <div class="contact">
+                    <p>Contact</p>
+                    <input type="text" required name="contact" id="contact" onchange="check_contact(event.target.value)" placeholder="Enter Contact Number">
+                </div>
+                <div class="mail">
+                    <p>MailID</p>
+                    <input type="email" required name="email" id="mail" onchange="check_mail(event.target.value)" placeholder="Enter Mail ID">
+                </div>
+                <div class="gender">
+                    <p>Select_Gender</p>
+                    <p id="rad"><input type="radio" required name="gender" value="male"> Male</p>
+                    <p id="rad"><input type="radio" required name="gender" value="female"> Female</p>
+                </div>
+                <div class="btn">
+                    <button type="submit" >submit</button>
+                </div>
+        </form>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
